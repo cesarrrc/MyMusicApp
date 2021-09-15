@@ -7,25 +7,46 @@
   pointer-events: none;
 }
 
+.cardContainer {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.titleContainer {
+  margin: 40px;
+  text-align: left;
+}
+
+.intro {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.nameIntro {
+  font-size: 80px;
+  margin: 0 auto 0 auto;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro {
+    font-size: 20px;
+  }
+
+  .nameIntro {
+    font-size: 35px;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
